@@ -1,5 +1,5 @@
-/.settings
-/gen
+#/.settings
+#/gen
 /assets
 /bin
 /obj
@@ -9,7 +9,7 @@
 /ClsD2.png
 /ClsD2.ucls
 /lint.xml
-/project.properties
+#/project.properties
 /SeqD1.png
 /SeqD1.useq
 /SeqD2.png

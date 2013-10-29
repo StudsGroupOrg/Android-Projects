@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pitch_black"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_fullscreen_margin"
+    android:paddingLeft="@dimen/activity_fullscreen_margin"
+    android:paddingRight="@dimen/activity_fullscreen_margin"
+    android:paddingTop="@dimen/activity_fullscreen_margin"
+    tools:context=".ViewPagerActivity" >
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txt_placeholder"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_header"
+        android:background="@color/full_transparency"
+         >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

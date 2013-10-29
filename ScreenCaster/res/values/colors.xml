@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="light_blue">#33b5e5</color>
+    <color name="silver">#CCCCCC</color>
+    <color name="bg_color">#0099cc</color>
+    <color name="bluish_green">#008080</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pitch_black">#000000</color>
+    <color name="full_transparency">#FF000000</color>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <style name="mytheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/mytheme2</item>
+    </style>
+    
+    <style name="mytheme2" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@raw/color_blue</item>
+    </style>
+    
+    
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory 
+        		android:title="Device Selection" >
+				
+    	<EditTextPreference
+        		android:name="EditTextPreference"
+                android:title="Enter IP address"
+                android:summary="Enter your IP Address(192.168.2.2) or\nDNS Address(http://www.google.com)"
+                android:defaultValue="192.168.43.183"
+                android:key="pref_web_address"
+                android:positiveButtonText="Done"
+                android:negativeButtonText="Revert"/>
+    
+    	<ListPreference
+        		android:name="ListPreference"
+        		android:enabled="true"
+        		android:title="Device list"
+        		android:summary="Select a device"
+        		android:defaultValue="None"
+        		android:key="pref_host_list"
+        		android:negativeButtonText="Cancel"/>
+    	
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        		android:title="Selected Device" >
+        <Preference
+            android:key="pref_device_data" />
+    	
+    </PreferenceCategory>
+    
+</PreferenceScreen>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="studs.group.in.screencaster"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@raw/video_gallary"
+        android:label="@string/app_name"
+        android:theme="@style/mytheme" >
+        <activity
+            android:name="studs.group.in.screencaster.gui.MyLogo"
+            android:label="@string/app_name"
+            android:theme="@style/FullScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="studs.group.in.screencaster.gui.AppHeadService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="studs.group.in.screencaster.MainActivity1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="studs.group.in.screencaster.gui.NewGallaryView"
+            android:label="@string/title_activity_new_gallary_view" >
+        </activity>
+        <activity
+            android:name="studs.group.in.screencaster.gui.MFragmentScreenShots"
+            android:label="@string/title_activity_screen_shots_fragment" >
+        </activity>
+        <activity
+            android:name="studs.group.in.screencaster.gui.MFragmentVideos"
+            android:label="@string/title_activity_fragment_videos" >
+        </activity>
+        <activity
+            android:name="studs.group.in.screencaster.gui.MFragmentCaster"
+            android:label="@string/title_activity_fragment_caster" >
+        </activity>
+        <activity
+            android:name="studs.group.in.screencaster.gui.handleactionbartabs.ActionBarTabMain"
+            android:label="@string/title_activity_action_bar_tab" >
+        </activity>
+        
+      <!--++++++++++++++++++++++++++++++++++  Piyush definitions ++++++++++++++++++++++++++++++++++-->
+        <service
+            android:name="studs.group.in.screencaster.essentials.BackgroundService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedService" >
+        </service>
+        
+        <activity
+            android:name="studs.group.in.screencaster.MainActivity2"
+            android:label="@string/app_name"
+            android:theme="@style/FullScreenTheme" >
+        </activity>
+        <activity
+            android:name="studs.group.in.screencaster.utils.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/FullScreenTheme" >
+        </activity>
+      <!--++++++++++++++++++++++++++++++++++ ~Piyush definitions ++++++++++++++++++++++++++++++++++-->
+      
+    </application>
+
+</manifest>
